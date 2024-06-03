@@ -1,0 +1,20 @@
+= About
+
+This repository is a simple proof of concept around https://htmx.org[HTMX], and since it can be linked to an HTTP backend, I chose https://bun.sh/[Bun].
+
+= Objectives
+
+- Show how HTMX can be handled with a Typescript first backend
+- Have fun !
+
+= How to build
+
+TBD
+
+= How to start
+
+TBD
+
+= How to test
+
+TBD
