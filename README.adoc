@@ -9,12 +9,14 @@ This repository is a simple proof of concept around https://htmx.org[HTMX], and 
 
 = How to build
 
-TBD
+[source,bash]
+----
+$ bun install
+----
 
 = How to start
 
-TBD
-
-= How to test
-
-TBD
+[source,bash]
+----
+$ bun run index.ts
+----
