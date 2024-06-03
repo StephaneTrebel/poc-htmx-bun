@@ -2,6 +2,12 @@
 
 This repository is a simple proof of concept around https://htmx.org[HTMX], and since it can be linked to an HTTP backend, I chose https://bun.sh/[Bun].
 
+Stack:
+- Bun for the JavaScript engine
+- Fastify for the web server
+- HTMX for that sweet HyperText overdrive
+- And…that's it !
+
 = Objectives
 
 - Show how HTMX can be handled with a Typescript first backend
@@ -18,5 +24,5 @@ $ bun install
 
 [source,bash]
 ----
-$ bun run index.ts
+$ bun start
 ----
