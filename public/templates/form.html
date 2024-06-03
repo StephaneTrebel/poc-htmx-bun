@@ -1,0 +1,46 @@
+<script src="js/my-input.js"></script>
+
+<form
+  id="my-form"
+  method="POST"
+  hx-post="post-form"
+  hx-target="#result"
+  hx-swap="beforeend"
+  style="margin-bottom: 50px"
+>
+  <div class="mb-3">
+    <my-input
+      name="first_name"
+      label="First Name"
+      placeholder="name"
+      required
+    ></my-input>
+    <my-input name="last_name" label="Last Name" placeholder="name"></my-input>
+    <my-input
+      type="email"
+      name="email"
+      label="Email"
+      placeholder="email"
+      required
+    ></my-input>
+  </div>
+
+  <button type="reset" class="btn btn-secondary">Reset</button>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+<table class="table table-striped table-hover table-bordered">
+  <thead>
+    <tr>
+      <th scope="col">First Name</th>
+      <th scope="col">Last Name</th>
+      <th scope="col">Email</th>
+    </tr>
+  </thead>
+  <tbody
+    id="result"
+    class="table-group-divider"
+    hx-trigger="load"
+    hx-get="get-users"
+  ></tbody>
+</table>
