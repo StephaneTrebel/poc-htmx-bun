@@ -2,6 +2,7 @@ import path from 'path';
 
 import Fastify from 'fastify';
 import FastifyStatic from '@fastify/static';
+import prettyMilliseconds from 'pretty-ms';
 
 let fastify = Fastify({ logger: true });
 
@@ -13,7 +14,10 @@ fastify.register(FastifyStatic, {
 
 fastify.get('/healthcheck', async function (_req, _res) {
   let elapsed = Date.now() - time;
-  return `Server uptime: ${elapsed}`;
+  return `Server uptime: ${prettyMilliseconds(elapsed, {
+    compact: true,
+    verbose: true,
+  })}`;
 });
 
 try {
