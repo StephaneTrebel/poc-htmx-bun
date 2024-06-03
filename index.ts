@@ -1,9 +1,19 @@
+import path from 'path';
+
 import Fastify from 'fastify';
+import FastifyStatic from '@fastify/static';
 
-const fastify = Fastify({ logger: true });
+let fastify = Fastify({ logger: true });
 
-fastify.get('/', async function handler(_request, _response) {
-  return { hello: 'world' };
+let time = Date.now();
+
+fastify.register(FastifyStatic, {
+  root: path.join(__dirname, 'public'),
+});
+
+fastify.get('/healthcheck', async function (_req, _res) {
+  let elapsed = Date.now() - time;
+  return `Server uptime: ${elapsed}`;
 });
 
 try {

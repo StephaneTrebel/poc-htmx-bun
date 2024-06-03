@@ -9,10 +9,13 @@
     "typescript": "^5.0.0"
   },
   "dependencies": {
-    "fastify": "^4.27.0"
+    "@fastify/static": "^7.0.4",
+    "fastify": "^4.27.0",
+    "human-time": "^0.0.2",
+    "pretty-ms": "^9.0.0"
   },
-	"scripts": {
-		"start": "bun run index.ts",
-		"watch": "bun --watch run index.ts"
-	}
+  "scripts": {
+    "start": "bun run index.ts",
+    "watch": "bun --watch run index.ts"
+  }
 }
