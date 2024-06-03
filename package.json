@@ -12,6 +12,8 @@
     "@fastify/static": "^7.0.4",
     "fastify": "^4.27.0",
     "human-time": "^0.0.2",
+    "preact": "^10.22.0",
+    "preact-render-to-string": "^6.5.4",
     "pretty-ms": "^9.0.0"
   },
   "scripts": {
