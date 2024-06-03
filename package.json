@@ -12,6 +12,7 @@
     "fastify": "^4.27.0"
   },
 	"scripts": {
-		"start": "bun run index.ts"
+		"start": "bun run index.ts",
+		"watch": "bun --watch run index.ts"
 	}
 }
