@@ -36,7 +36,7 @@ fastify.get('/breadcrumb/get-last', async function (_req, _res) {
 });
 
 try {
-  await fastify.listen({ port: 8080 });
+  await fastify.listen({ port: 3001 });
 } catch (error) {
   fastify.log.error(error);
   process.exit(1);
